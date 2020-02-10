@@ -42,8 +42,9 @@ public class StringUtilities {
      * @return `value` with char of value `charToRemove` removed
      */
     public String removeCharacter(String value, Character charToRemove) {
-        String newString = value.replace(charToRemove, '');
-        return newString;
+        String toReturn = value;
+        String character = Character.toString(charToRemove);
+        return toReturn.replace(character, "");
     }
 
     /**
